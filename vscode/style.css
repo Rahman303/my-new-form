@@ -1,0 +1,221 @@
+body{
+   background-image: url(https://wallpaperaccess.com/full/521111.jpg);
+   background-size: cover;
+   /* background-position: center; */
+   background-repeat: no-repeat;
+   height: 100vh;
+}
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=La+Belle+Aurore&display=swap');
+.main-page{
+   margin: auto;
+   background: #e1c5c5;
+   opacity: 80%;
+   width: 60%;
+   padding: 10px;
+   height: 500px;
+   position: absolute;
+   top: 50%;
+   left: 20%;
+   transform: translate(0, -50%);
+   display: flex;
+   border-radius: 15px;
+   /* display: none; */
+}
+.register-page{
+   /* background: #e1c5c5; */
+   margin: auto;
+   opacity: 80%;
+   width: 60%;
+   padding: 10px;
+   height: 500px;
+   position: absolute;
+   top: 50%;
+   left: 20%;
+   transform: translate(0, -50%);
+   display: flex;
+   border-radius: 15px;
+   visibility: hidden;
+   /* transition: 3s; */
+}
+.main-page-left, .register-page-left{
+   transform: translate(0, 30%);
+   width: 50%;
+}
+
+#first-text, #second-text, #login, #login-fr-pswr, #not-member, #sign-up, #register-h1, #member{
+   color: rgb(60, 50, 50);
+   font-family: 'Fjalla One', sans-serif;
+}
+#first-text-in{
+   color: #9e0040e0;
+}
+
+
+.main-page-right{
+   background: white;
+   width: 50%;
+   border-radius: 15px;
+}
+.register-page-right{
+   background: white;
+   opacity: 80%;
+   width: 50%;
+   border-radius: 15px;
+}
+.form-section{
+   flex-direction: column;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 5px;
+   transform: translate(0, 50%);
+}
+.register-section{
+   flex-direction: column;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 5px;
+   transform: translate(0, 15%);
+}
+.form-login{
+   width: 70%;
+}
+#login, #register-h1{
+   text-align: center;
+   transform: translate(0, 120%);
+}
+#login-fr-pswr{
+   text-decoration: none;
+   font-size: 13px;
+}
+#email, #password, #usrname, #rg-email, #psw, #cf-psw{
+   width: 100%;
+   padding: 15px 20px;
+   margin: 8px 0;
+   box-sizing: border-box;
+   border-radius: 15px;
+   border: 0.5px solid rgba(185, 170, 170, 0.24);
+ }
+
+ #submit-button, .register-btn{
+   width: 65%;
+   height: 35px;
+   border-radius: 15px;
+   background: #05051f6e;
+   font-size: 18px;
+   border: none;
+   color: whitesmoke;
+ }
+ #submit-button:hover, .register-btn:hover{
+   color: white;
+   cursor: pointer;
+ }
+ #email:focus, #password:focus, #usrname, #rg-email, #psw, #cf-psw{
+   outline: none;
+ }
+
+ .not-member{
+   transform: translate(0%, 240%);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+ }
+ #member{
+   transform: translate(0%, 300%);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+   text-decoration: none;
+ }
+ #member:hover{
+   text-decoration: underline;
+ }
+ #not-member{
+   font-size: 15px;
+ }
+ #sign-up{
+   text-decoration: none;
+   color: rgb(60, 50, 50);
+   font-size: 17px;
+ }
+ #sign-up.left{
+   position: relative;
+ }
+ #sign-up.left:before {
+   content: "";
+   position: absolute;
+   width: 0;
+   height: 1px;
+   bottom: -3px;
+   left: 0;
+   background-color: #000000;
+   visibility: hidden;
+   transition: all 0.2s ease-in-out;
+ }
+ #sign-up.left:hover:before {
+   visibility: visible;
+   width: 100%;
+ }
+.visible-password{
+   position: relative;
+}
+.fa-eye::before{
+   color: #4ba4a4;;
+}
+.congratulations{
+   visibility: hidden;
+}
+#togglePassword, #togglePasswordCfrm{
+   cursor: pointer;
+   position: absolute;
+   right: 5%;
+   top: 39%;
+ }
+ .password, .password-confirm{
+   position: relative;
+ }
+
+
+ /* ******************responsive-section******************** */
+
+ @media only screen and (max-width: 500px) {
+   .main-page-left, .register-page-left{
+      display: none;
+   }
+   .main-page-right, .register-page-right{
+      width: 100%;
+   }
+   body{
+      background-image: url(https://wallpaperaccess.com/full/521111.jpg);
+      background-size: cover;
+      /* background-position: center; */
+      background-repeat: no-repeat;
+      height: 100vh;
+   }
+}
+
+@media only screen and (min-width: 300px) and (max-width:780px){
+   .not-member{
+      flex-direction: column;
+      transform: translate(0, 120%);
+   }
+}
+@media only screen and (min-width: 490px) and (max-width:620px){
+   #member{
+      transform: translate(15%, 145%);
+}
+}
+/* @media (max-width: 1024px){
+   #togglePassword{
+      cursor: pointer;
+      position: absolute;
+      right: 27%;
+      top: 52%;
+    }
+} */
+
+
+ /* ******************responsive-section******************** */

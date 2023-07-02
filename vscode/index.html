@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+   <link rel="stylesheet" href="style.css">
+   <title>Document</title>
+</head>
+<body>
+   <div class="main-page">
+      <div class="main-page-left">
+         <h1 id="first-text">Welcome to our <span id="first-text-in">Website</span></h1>
+         <p id="second-text">Login to access your admin account</p>
+      </div>
+      <div class="main-page-right">
+         <h1 id="login">Login</h1>
+         <div class="form-section">
+            <form class="form-login" onsubmit="return false;">
+               <input type="text" id="email" name="email" placeholder="Email Address">
+               <input type="password" id="password" name="password" placeholder="Password">
+             </form>
+             <button type="submit" id="submit-button">Login</button>
+             <a href="" id="login-fr-pswr">Forgot password?</a>
+         </div>
+         <div class="not-member">
+            <p id="not-member">Don't have an account?</p>
+            <a href="" id="sign-up" class="left" onclick="changeToRegister(); return false">Sign up</a>
+         </div>
+      </div>
+   </div>
+   <div class="register-page" replaceChildren() >
+      <div class="register-page-left">
+         <h1 id="first-text">Welcome to our <span id="first-text-in">Website</span></h1>
+         <p id="second-text">Create your free account</p>
+      </div>
+      <div class="register-page-right">
+         <h1 id="register-h1">Register</h1>
+         <form action="" name="form1" class="register-section" onsubmit="return false;">
+            <div class="">
+              <input id="usrname" type="text" placeholder="Username" name="usrnm">
+            </div>
+          
+            <div class="">
+              <input id="rg-email" type="text" placeholder="Email" name="email">
+            </div>
+          
+            <div class="password">
+              <input id="psw" name="text1" type="password" placeholder="Password">
+              <i class="far fa-eye" id="togglePassword" ></i>
+            </div>
+           
+
+            <div class="password-confirm">
+              <input id="cf-psw" type="password" placeholder="Confirm password" name="psw">
+              <i class="far fa-eye" id="togglePasswordCfrm" ></i>
+            </div>
+          
+            <button type="submit" class="register-btn" value="submit" onclick="submitForm()">Register</button>
+          </form>
+          <a href="" id="member">Already have an account?</a>
+      </div>
+   </div>
+
+
+
+   <script src="./script.js"></script>
+</body>
+</html>
